@@ -1,0 +1,33 @@
+<!-- form handling -->
+<form action="/api/products" method="POST" id="add_user">
+    <div class="new_user">
+        <div class="form-group">
+            <label for="name" class="text-light">Name</label>
+            <input type="hidden" name="id" value="">
+            <input type="text" name="name" value="" placeholder="">
+        </div>
+        <div class="form-group">
+            <label for="image" class="text-light">Upload Image</label>
+            <br>
+            <br>
+            <input type="file" name="image" value="" placeholder="">
+            <br>
+        </div>
+        <div class="form-group">
+            <label for="Email" class="text-light">Description</label>
+            <input type="text" name="description" value="" placeholder="">
+        </div>
+        <div class="form-group">
+            <label for="Email" class="text-light">Quantity</label>
+            <input type="text" name="quantity" value="" placeholder="">
+        </div>
+        <div class="form-group">
+            <label for="Email" class="text-light">Unit Price</label>
+            <input type="text" name="price" value="" placeholder="">
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn text-dark update">Save</button>
+        </div>
+
+    </div>
+</form>

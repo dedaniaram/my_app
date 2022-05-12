@@ -1,0 +1,43 @@
+<!-- include header -->
+<%- include('include/_header') %>
+<!-- /include header -->
+
+    <!-- Main Site -->
+    <main id=
+    "site-main">
+        <div class="container">
+            <div class="box-nav d-flex justify-between">
+                <a href="/add_product" class="border-shadow">
+                    <span class="text-gradient">Add Product </i><i class="fa-solid fa-plus"></i></span>
+                </a>
+                <a href="/cart" class="border-shadow">
+                    <span class="text-gradient">Cart <i class="fa-solid fa-cart-shopping"></i></span>
+                </a>
+            </div>
+
+            <!-- form handling -->
+            <form action="/" method="POST">
+                <table class="table">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                            <th>Quantity</th>
+                            <th>Price</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <%- include('include/_show') %>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+    </main>
+<!-- /Main Site -->
+
+
+<!-- include footer -->
+<%- include('include/_footer') %>
+<!-- /include footer -->
